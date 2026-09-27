@@ -27,6 +27,8 @@ permissions:
 concurrency:
   group: metaflow-status
   cancel-in-progress: false
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
 jobs:
   monitor:
     runs-on: ubuntu-latest
