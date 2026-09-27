@@ -19,6 +19,21 @@ sites:
 # The dashboard endpoints are probed in monitor.py during staging, but do not
 # open incident issues until the static dashboard is actually published.
 # activate.py appends the reviewed public endpoints at that deployment gate.
+  - name: 公开看板
+    slug: dashboard
+    url: https://dashboard.metaflow.shuang-su.com
+    expectedStatusCodes: [200]
+    maxResponseTime: 15000
+  - name: 7 天业务 API
+    slug: analytics7
+    url: https://dashboard.metaflow.shuang-su.com/api/public/v1/analytics/7d.json
+    expectedStatusCodes: [200]
+    maxResponseTime: 15000
+  - name: 30 天业务 API
+    slug: analytics30
+    url: https://dashboard.metaflow.shuang-su.com/api/public/v1/analytics/30d.json
+    expectedStatusCodes: [200]
+    maxResponseTime: 15000
 assignees: []
 skipGeneratingWebsite: true
 skipDescriptionUpdate: true

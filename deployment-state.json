@@ -1,1 +1,1 @@
-{"dashboard_live":false}
+{"dashboard_live": false, "active_checks": ["analytics30", "analytics7", "collector", "dashboard", "main"]}
