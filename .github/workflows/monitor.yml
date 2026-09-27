@@ -1,11 +1,18 @@
 name: Monitor and publish status
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: "*/5 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['.upptimerc.yml', 'deployment-state.json', 'site/**', 'scripts/**', '.github/workflows/monitor.yml']
+    paths:
+      [
+        ".upptimerc.yml",
+        "deployment-state.json",
+        "site/**",
+        "scripts/**",
+        ".github/workflows/monitor.yml",
+      ]
 permissions:
   contents: write
   issues: write
@@ -30,7 +37,7 @@ jobs:
           command: update
         env:
           GH_PAT: ${{ github.token }}
-          SECRETS_CONTEXT: '{}'
+          SECRETS_CONTEXT: "{}"
       - name: Independent HTTPS and data freshness
         run: python3 scripts/monitor.py
       - name: Commit public observation history
