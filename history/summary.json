@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Metaflow 主网站",
+    "url": "https://metaflow.shuang-su.com",
+    "icon": "https://icons.duckduckgo.com/ip3/metaflow.shuang-su.com.ico",
+    "slug": "main-site",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 559,
+    "timeDay": 559,
+    "timeWeek": 559,
+    "timeMonth": 559,
+    "timeYear": 559,
+    "dailyMinutesDown": {}
+  },
+  {
+    "name": "数据接收接口",
+    "url": "https://bziyumtuzvfmhgghvpcs.functions.supabase.co/analytics-collect",
+    "icon": "https://icons.duckduckgo.com/ip3/bziyumtuzvfmhgghvpcs.functions.supabase.co.ico",
+    "slug": "analytics-collector",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 251,
+    "timeDay": 251,
+    "timeWeek": 251,
+    "timeMonth": 251,
+    "timeYear": 251,
+    "dailyMinutesDown": {}
+  }
+]
